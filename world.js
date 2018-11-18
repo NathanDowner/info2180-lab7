@@ -7,7 +7,8 @@ window.onload = function() {
     lookup.addEventListener('click', getCountryInfo);
     
     
-    function getCountryInfo() {
+    function getCountryInfo(e) {
+        e.preventDefault();
         let val;
         val = `country=${input.value}`;
         if (check.checked == true) {
